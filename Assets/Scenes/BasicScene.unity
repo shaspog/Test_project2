@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 103293027}
   m_Layer: 0
-  m_Name: spawn3 (1)
+  m_Name: spawn4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,7 +147,7 @@ Transform:
   m_GameObject: {fileID: 103293026}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.68, z: 2.46}
+  m_LocalPosition: {x: 0, y: -0.913, z: 4.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1448,6 +1448,7 @@ MonoBehaviour:
   anomalyPairs:
   - anomalyObject: {fileID: 1529032510}
     normalObject: {fileID: 582246618}
+    specificSpawnLocation: {fileID: 103293027}
   spawnLocations:
   - {fileID: 961521672}
   - {fileID: 597006502}

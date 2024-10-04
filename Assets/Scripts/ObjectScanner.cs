@@ -11,6 +11,7 @@ public class ObjectScanner : MonoBehaviour
     {
         public GameObject anomalyObject;
         public GameObject normalObject;
+        public Transform specificSpawnLocation;
     }
     // Anomaly Pair List
     public List<AnomalyPair> anomalyPairs;
@@ -43,9 +44,9 @@ public class ObjectScanner : MonoBehaviour
     {
         foreach ( var pair in anomalyPairs)
         {
-            Transform randomLocation = spawnLocations[Random.Range(0, spawnLocations.Count)];
-            pair.anomalyObject.transform.position = randomLocation.position;
-            pair.anomalyObject.transform.rotation = randomLocation.rotation;
+            Transform spawnLocation = pair.specificSpawnLocation != null ? pair.specificSpawnLocation : GetRandomSpawnLocation();
+            pair.anomalyObject.transform.position = spawnLocation.position;
+            pair.anomalyObject.transform.rotation = spawnLocation.rotation;
 
             //Enable and disable counterparts
 
@@ -53,6 +54,11 @@ public class ObjectScanner : MonoBehaviour
             pair.normalObject.SetActive(false);
 
         }
+    }
+
+    Transform GetRandomSpawnLocation()
+    {
+        return spawnLocations[Random.Range(0, spawnLocations.Count)];
     }
 
     void ShootRay()
@@ -65,10 +71,8 @@ public class ObjectScanner : MonoBehaviour
         {
             foreach (var pair in anomalyPairs)
             {
-                if (hit.collider.CompareTag(Tag))
-                {
-                    if (hit.collider.gameObject == pair.anomalyObject)
-                    {
+                if (hit.collider.CompareTag(Tag) && hit.collider.gameObject == pair.anomalyObject)
+                {              
                         Debug.Log("Scanned anomaly" + pair.anomalyObject.name);
 
                         //replace with counterpart 
@@ -78,8 +82,7 @@ public class ObjectScanner : MonoBehaviour
                         pair.normalObject.SetActive(true);
 
                         break; //exit loop after scanning 
-
-                    }
+                    
                 }
             }
         }
