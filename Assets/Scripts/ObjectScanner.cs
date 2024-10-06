@@ -34,6 +34,10 @@ public class ObjectScanner : MonoBehaviour
     public float maxTime = 100f;
     private float currentTime;
 
+    //Cooldown for scanner
+    public float scanCooldown = 3f;
+    private float lastScanTime;
+
     private void Start()
     {
         RandomizeAnomalies();
@@ -41,13 +45,23 @@ public class ObjectScanner : MonoBehaviour
         currentTime = maxTime;
         anomalyTimerSlider.maxValue = maxTime;
         anomalyTimerSlider.value = maxTime;
+        //ScannerCooldown
+        lastScanTime = scanCooldown; // scan from the get-go
     }
 
     void Update()
     {
         if (Keyboard.current.spaceKey.isPressed) // Change the trigger on grip instead
         {
-            ShootRay();
+            if (Time.time >= lastScanTime + scanCooldown)
+            {
+                ShootRay();
+                lastScanTime = Time.time; // update cd
+            }
+            else
+            {
+                Debug.Log("ability on cd"); // Change later into UI pop-up
+            }
         }
         //Update Timer Function
         UpdateTimer();
@@ -112,13 +126,16 @@ public class ObjectScanner : MonoBehaviour
         // Perform the raycast
         if (Physics.Raycast(ray, out hit, rayLength, layerMask))
         {
+            //anomaly track
+            bool foundAnomalyTag = false;
+
             foreach (var pair in anomalyPairs)
             {
                 if (hit.collider.CompareTag(Tag) && hit.collider.gameObject == pair.anomalyObject)
                 {              
                         Debug.Log("Scanned anomaly" + pair.anomalyObject.name);
 
-                        //replace with counterpart 
+                        //replace with non anomaly counterpart 
                         pair.anomalyObject.SetActive(false);
                         pair.normalObject.transform.position = pair.anomalyObject.transform.position;
                         pair.normalObject.transform.rotation = pair.anomalyObject.transform.rotation;
@@ -128,10 +145,32 @@ public class ObjectScanner : MonoBehaviour
                         currentTime = Mathf.Min(currentTime + 5f, maxTime);
                         anomalyTimerSlider.value = currentTime;
 
+                        foundAnomalyTag = true; //AnomalyTag scanned
                         break; //exit loop after scanning 
                     
                 }
             }
+
+            if (!foundAnomalyTag)
+            {
+                NonAnomalyScanPunish();
+                Debug.Log("Non anomaly scanned" + hit.collider.gameObject.name);
+            }
         }
     }
+
+    void NonAnomalyScanPunish()
+    {
+        // deduct time for non anomaly scan
+        float deductionAmount = 5f;
+        currentTime = Mathf.Max(currentTime - deductionAmount, 0); //prevent going below 0
+        anomalyTimerSlider.value = currentTime;
+
+        if (currentTime <= 0)
+        {
+            //gameOVer
+            Debug.Log("Game Over");
+        }
+    }
+
 }
