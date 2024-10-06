@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem; 
+using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class ObjectScanner : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class ObjectScanner : MonoBehaviour
         public GameObject normalObject;
         public Transform specificSpawnLocation;
     }
+
     // Anomaly Pair List
     public List<AnomalyPair> anomalyPairs;
     // Spawn Location List
@@ -27,9 +29,18 @@ public class ObjectScanner : MonoBehaviour
     public Transform rightController;
 
 
+    //UI Elements
+    public Slider anomalyTimerSlider;
+    public float maxTime = 100f;
+    private float currentTime;
+
     private void Start()
     {
         RandomizeAnomalies();
+        //Timer parts
+        currentTime = maxTime;
+        anomalyTimerSlider.maxValue = maxTime;
+        anomalyTimerSlider.value = maxTime;
     }
 
     void Update()
@@ -38,7 +49,39 @@ public class ObjectScanner : MonoBehaviour
         {
             ShootRay();
         }
+        //Update Timer Function
+        UpdateTimer();
     }
+    #region SanityBar Timer
+
+    void UpdateTimer()
+    {
+        if (AnyAnomaliesPresent())
+        {
+            currentTime -= Time.deltaTime;
+            anomalyTimerSlider.value = currentTime;
+
+            if (currentTime <= 0)
+            {
+                Debug.Log("Game Over"); //Change for cutscene or canva later
+            }
+        }
+    }
+
+    bool AnyAnomaliesPresent()
+    {
+        foreach (var pair in anomalyPairs)
+        {
+            if (pair.anomalyObject.activeSelf)
+            {
+                return true; // Anomaly IS ACtive thus timer ticks
+            }
+        }
+
+        return false;
+    }
+
+    #endregion
 
     void RandomizeAnomalies()
     {
@@ -80,6 +123,10 @@ public class ObjectScanner : MonoBehaviour
                         pair.normalObject.transform.position = pair.anomalyObject.transform.position;
                         pair.normalObject.transform.rotation = pair.anomalyObject.transform.rotation;
                         pair.normalObject.SetActive(true);
+
+                        // Refill anomaly bar by adding extra time for each scanned anomaly
+                        currentTime = Mathf.Min(currentTime + 5f, maxTime);
+                        anomalyTimerSlider.value = currentTime;
 
                         break; //exit loop after scanning 
                     
