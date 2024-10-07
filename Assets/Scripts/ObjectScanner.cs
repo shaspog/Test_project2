@@ -27,6 +27,8 @@ public class ObjectScanner : MonoBehaviour
     public LayerMask layerMask;
     // right controller position and rotation
     public Transform rightController;
+    //Input reference for trigger
+    public InputActionProperty rightHandTriggerAction; // Works like a charm :3
 
 
     //UI Elements
@@ -51,7 +53,7 @@ public class ObjectScanner : MonoBehaviour
 
     void Update()
     {
-        if (Keyboard.current.spaceKey.isPressed) // Change the trigger on grip instead
+        if (rightHandTriggerAction.action.ReadValue<float>() > 0.1f) //trigger as float instead of input 
         {
             if (Time.time >= lastScanTime + scanCooldown)
             {
@@ -66,6 +68,15 @@ public class ObjectScanner : MonoBehaviour
         //Update Timer Function
         UpdateTimer();
     }
+
+    #region GameOver UI Elements
+
+    void GameOverCut()
+    {
+        Debug.Log("Game Over"); //Change Later to cutscene or transition all of it to a different script
+    }
+    #endregion 
+
     #region SanityBar Timer
 
     void UpdateTimer()
@@ -77,7 +88,7 @@ public class ObjectScanner : MonoBehaviour
 
             if (currentTime <= 0)
             {
-                Debug.Log("Game Over"); //Change for cutscene or canva later
+                GameOverCut(); // trigger cutscene for game OVER!
             }
         }
     }
@@ -97,11 +108,17 @@ public class ObjectScanner : MonoBehaviour
 
     #endregion
 
+    #region RNG Anomaly
+
     void RandomizeAnomalies()
     {
+        //truly rng anomaly placement
+        List<Transform> availableLocations = new List<Transform>(spawnLocations);
+
         foreach ( var pair in anomalyPairs)
         {
-            Transform spawnLocation = pair.specificSpawnLocation != null ? pair.specificSpawnLocation : GetRandomSpawnLocation();
+            Transform spawnLocation = pair.specificSpawnLocation != null ? pair.specificSpawnLocation : GetRandomSpawnLocation(ref availableLocations); //new addition
+
             pair.anomalyObject.transform.position = spawnLocation.position;
             pair.anomalyObject.transform.rotation = spawnLocation.rotation;
 
@@ -113,10 +130,16 @@ public class ObjectScanner : MonoBehaviour
         }
     }
 
-    Transform GetRandomSpawnLocation()
+    Transform GetRandomSpawnLocation(ref List<Transform> availableLocations)
     {
-        return spawnLocations[Random.Range(0, spawnLocations.Count)];
+        // new RNG to spawn anomalies randomly
+        int randomIndex = Random.Range(0, availableLocations.Count);
+        Transform chosenLocation = availableLocations[randomIndex];
+        availableLocations.RemoveAt(randomIndex);
+        return chosenLocation;
     }
+
+    #endregion
 
     void ShootRay()
     {
@@ -158,7 +181,8 @@ public class ObjectScanner : MonoBehaviour
             }
         }
     }
-
+    
+    //Punishment for scanning wrong object
     void NonAnomalyScanPunish()
     {
         // deduct time for non anomaly scan
@@ -169,7 +193,7 @@ public class ObjectScanner : MonoBehaviour
         if (currentTime <= 0)
         {
             //gameOVer
-            Debug.Log("Game Over");
+            GameOverCut(); //Trigger cutscene for Game OVER!!
         }
     }
 
