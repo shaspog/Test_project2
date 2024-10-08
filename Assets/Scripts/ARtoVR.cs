@@ -14,7 +14,6 @@ public class ARtoVR : MonoBehaviour
 
     IEnumerator ARtoVRdelay()
     {
-        yield return new WaitForSeconds(1f);
         // Close the eyes first
         EyesClosing.CloseEyes();
 
@@ -24,7 +23,7 @@ public class ARtoVR : MonoBehaviour
         // Check if the eyes are closed before switching the scene
         if (EyesClosing.isClosed)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 }
