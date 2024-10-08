@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EyesClosing : MonoBehaviour
 {
+    
+
     public RectTransform UpperEyelid;      // The top UI Image's RectTransform
     public RectTransform LowerEyelid;   // The bottom UI Image's RectTransform
     public float closingSpeed = 2f;      // Speed of eyelid closing
@@ -34,8 +36,10 @@ public class EyesClosing : MonoBehaviour
         // Animate the eyelids closing
         if (isClosing)
         {
+            
             UpperEyelid.anchoredPosition = Vector2.Lerp(UpperEyelid.anchoredPosition, topClosedPos, closingSpeed * Time.deltaTime);
             LowerEyelid.anchoredPosition = Vector2.Lerp(LowerEyelid.anchoredPosition, bottomClosedPos, closingSpeed * Time.deltaTime);
+
 
             if (Vector2.Distance(UpperEyelid.anchoredPosition, topClosedPos) < 0.1f)
             {
