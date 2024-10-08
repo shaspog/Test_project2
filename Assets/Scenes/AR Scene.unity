@@ -524,7 +524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.078431375}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1215,7 +1215,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6e88cf839127484f8ff3f3090b39a13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EyeClosingCanvas: {fileID: 2054051380}
   EyesClosing: {fileID: 2054051378}
 --- !u!1 &2054051373
 GameObject:
@@ -1231,7 +1230,6 @@ GameObject:
   - component: {fileID: 2054051374}
   - component: {fileID: 2054051378}
   - component: {fileID: 2054051379}
-  - component: {fileID: 2054051381}
   - component: {fileID: 2054051380}
   m_Layer: 0
   m_Name: EyeCloseCanvas
@@ -1337,12 +1335,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884c287d98bcf7d49a8064401bcf11f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EyeClosingCanvas: {fileID: 2054051380}
   UpperEyelid: {fileID: 1514666913}
   LowerEyelid: {fileID: 879403507}
   closingSpeed: 2
   openingSpeed: 2
   isClosed: 0
-  isOpen: 0
+  isOpen: 1
 --- !u!114 &2054051379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1374,20 +1373,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &2054051381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2054051373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1918f59d4c3ccf048b0809826fa24a05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvasGroup: {fileID: 2054051380}
-  animationSpeed: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

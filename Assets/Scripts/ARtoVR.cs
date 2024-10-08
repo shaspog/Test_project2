@@ -6,22 +6,10 @@ using UnityEngine.SceneManagement;
 public class ARtoVR : MonoBehaviour
 
 {
-    public CanvasGroup EyeClosingCanvas;
     public EyesClosing EyesClosing;
-    public void SetTransparency(float alpha)
-    {
-        EyeClosingCanvas.alpha = Mathf.Clamp01(alpha); // Clamps the value between 0 and 1
-    }
-    private void Start()
-    {
-        EyeClosingCanvas.alpha = 0f;
-    }
+   
     void OnTriggerEnter(Collider Headboundary)
     {
-     
-            // Set the alpha (transparency) to 0 (fully transparent)
-        EyeClosingCanvas.alpha = 1f;
-        
         StartCoroutine(ARtoVRdelay());
     }
 
