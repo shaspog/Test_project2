@@ -31,6 +31,11 @@ public class ObjectScanner : MonoBehaviour
     public InputActionProperty rightHandTriggerAction; // Works like a charm :3
 
 
+    // Difficulty Elements 
+    public float difficultyIncreaseSpeed = 40f;
+    private float difficultyTimer = 0f;
+
+
     //UI Elements
     public Slider anomalyTimerSlider;
     public float maxTime = 100f;
@@ -49,6 +54,8 @@ public class ObjectScanner : MonoBehaviour
         anomalyTimerSlider.value = maxTime;
         //ScannerCooldown
         lastScanTime = scanCooldown; // scan from the get-go
+        //Difficulty timer 
+        difficultyTimer = 0f;
     }
 
     void Update()
@@ -67,6 +74,9 @@ public class ObjectScanner : MonoBehaviour
         }
         //Update Timer Function
         UpdateTimer();
+
+        //Update Difficulty Timer
+        UpdateDifficulty();
     }
 
     #region GameOver UI Elements
@@ -81,9 +91,11 @@ public class ObjectScanner : MonoBehaviour
 
     void UpdateTimer()
     {
-        if (AnyAnomaliesPresent())
+        int activeAnomalies = CurrentlyActiveAnomalies();
+
+        if (activeAnomalies > 0)
         {
-            currentTime -= Time.deltaTime;
+            currentTime -= Time.deltaTime * activeAnomalies;
             anomalyTimerSlider.value = currentTime;
 
             if (currentTime <= 0)
@@ -93,17 +105,19 @@ public class ObjectScanner : MonoBehaviour
         }
     }
 
-    bool AnyAnomaliesPresent()
+    int CurrentlyActiveAnomalies()
     {
+        int count = 0; //starts the game with 0 count 
+
         foreach (var pair in anomalyPairs)
         {
             if (pair.anomalyObject.activeSelf)
             {
-                return true; // Anomaly IS ACtive thus timer ticks
+                count++; //count = count + 1
             }
         }
 
-        return false;
+        return count; //return count as total active anomalies
     }
 
     #endregion
@@ -139,6 +153,19 @@ public class ObjectScanner : MonoBehaviour
         return chosenLocation;
     }
 
+    #endregion
+
+    #region Difficulty
+    void UpdateDifficulty()
+    {
+        difficultyTimer += Time.deltaTime;
+
+        if (difficultyTimer >= difficultyIncreaseSpeed)
+        {
+            Debug.Log("Difficulty UPPed! Watch Out Gamers");
+            difficultyTimer = 0f; //resets the timer and starts counting down again till next difficulty
+        }
+    }
     #endregion
 
     void ShootRay()
