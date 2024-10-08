@@ -1985,26 +1985,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   rightController: {fileID: 1181976860}
-  rightHandTriggerAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Right Hand Trigger
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 082cd1b0-2d68-497e-903a-0980270ace51
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: 7dd7a14f-3c27-47cf-a911-c1e83503927f
-        m_Path: 
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Right Hand Trigger
-        m_Flags: 0
-      m_Flags: 0
-    m_Reference: {fileID: -2439264783773714294, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
+  rightHandTriggerAction: {fileID: 1894249573983918742, guid: b56e555a17f6c6f4e816e16a8254e1d4, type: 3}
   difficultyIncreaseSpeed: 10
   anomalyTimerSlider: {fileID: 798207817}
   maxTime: 100

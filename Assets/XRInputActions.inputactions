@@ -1,0 +1,34 @@
+{
+    "name": "XRInputActions",
+    "maps": [
+        {
+            "name": "XRControls",
+            "id": "1665470d-7222-4e62-a4d3-cdaa86659f4b",
+            "actions": [
+                {
+                    "name": "RightHandTrigger",
+                    "type": "Value",
+                    "id": "fc0e421d-aec3-495b-8fd9-2e3403e2ed41",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "66ca42d9-1db3-4a25-aa5f-fc7c5026cde0",
+                    "path": "<XRController>{RightHand}/{Trigger}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightHandTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -28,7 +28,7 @@ public class ObjectScanner : MonoBehaviour
     // right controller position and rotation
     public Transform rightController;
     //Input reference for trigger
-    public InputActionProperty rightHandTriggerAction; // Works like a charm :3
+    public InputActionReference rightHandTriggerAction; // Testing
 
 
     // Difficulty Elements 
