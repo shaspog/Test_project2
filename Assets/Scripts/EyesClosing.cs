@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class EyesClosing : MonoBehaviour
 {
+
+    public CanvasGroup EyeClosingCanvas;
     public RectTransform UpperEyelid;      // The top UI Image's RectTransform
     public RectTransform LowerEyelid;   // The bottom UI Image's RectTransform
     public float closingSpeed = 2f;      // Speed of eyelid closing
@@ -15,8 +19,13 @@ public class EyesClosing : MonoBehaviour
     private Vector2 bottomClosedPos;
     private bool isClosing = false;
     private bool isOpening = false;
-    public bool isClosed = false;
-    public bool isOpen = true;
+    public bool isClosed;
+    public bool isOpen;
+
+    public void SetTransparency(float alpha)
+    {
+        EyeClosingCanvas.alpha = Mathf.Clamp01(alpha); // Clamps the value between 0 and 1
+    }
 
     void Start()
     {
@@ -25,8 +34,19 @@ public class EyesClosing : MonoBehaviour
         bottomOpenPos = LowerEyelid.anchoredPosition;
 
         // Assuming the target positions when eyelids are fully closed (centered)
-        topClosedPos = new Vector2(topOpenPos.x, 90);
-        bottomClosedPos = new Vector2(bottomOpenPos.x, -90);
+        topClosedPos = new Vector2(topOpenPos.x, 89);
+        bottomClosedPos = new Vector2(bottomOpenPos.x, -89);
+
+        if (isClosed)
+        {
+            UpperEyelid.anchoredPosition = topClosedPos;
+            LowerEyelid.anchoredPosition = bottomClosedPos;
+        }
+        else
+        {
+            UpperEyelid.anchoredPosition = topOpenPos;
+            LowerEyelid.anchoredPosition = bottomOpenPos;
+        }
     }
 
     void Update()
@@ -34,8 +54,12 @@ public class EyesClosing : MonoBehaviour
         // Animate the eyelids closing
         if (isClosing)
         {
+            // Set the alpha (transparency) to 1
+            EyeClosingCanvas.alpha = 1f;
+
             UpperEyelid.anchoredPosition = Vector2.Lerp(UpperEyelid.anchoredPosition, topClosedPos, closingSpeed * Time.deltaTime);
             LowerEyelid.anchoredPosition = Vector2.Lerp(LowerEyelid.anchoredPosition, bottomClosedPos, closingSpeed * Time.deltaTime);
+
 
             if (Vector2.Distance(UpperEyelid.anchoredPosition, topClosedPos) < 0.1f)
             {
@@ -44,7 +68,7 @@ public class EyesClosing : MonoBehaviour
                 isOpen = false;
             }
         }
-
+ 
         // Animate the eyelids opening
         if (isOpening)
         {
@@ -53,6 +77,9 @@ public class EyesClosing : MonoBehaviour
 
             if (Vector2.Distance(UpperEyelid.anchoredPosition, topOpenPos) < 0.1f)
             {
+                // Set the alpha (transparency) to 0 (fully transparent)
+                EyeClosingCanvas.alpha = 0f;
+
                 isOpening = false; // Stop when the eyelids are fully open
                 isOpen= true;
                 isClosed= false;

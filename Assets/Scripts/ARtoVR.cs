@@ -7,6 +7,7 @@ public class ARtoVR : MonoBehaviour
 
 {
     public EyesClosing EyesClosing;
+   
     void OnTriggerEnter(Collider Headboundary)
     {
         StartCoroutine(ARtoVRdelay());
