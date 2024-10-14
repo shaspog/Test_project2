@@ -45,6 +45,9 @@ public class ObjectScanner : MonoBehaviour
     public float scanCooldown = 3f;
     private float lastScanTime;
 
+    //ScanShader reference
+    public Material ScanMaterial;
+
     private void Start()
     {
         RandomizeAnomalies();
@@ -176,6 +179,15 @@ public class ObjectScanner : MonoBehaviour
         // Perform the raycast
         if (Physics.Raycast(ray, out hit, rayLength, layerMask))
         {
+            //Apply shader mat 
+            Renderer hitRenderer = hit.collider.GetComponent<Renderer>();
+            if (hitRenderer != null)
+            {
+                Material originalMaterial = hitRenderer.material;
+                hitRenderer.material = ScanMaterial;
+                StartCoroutine(RemoveScanShader(hitRenderer, originalMaterial, scanCooldown));
+            }
+
             //anomaly track
             bool foundAnomalyTag = false;
 
@@ -207,6 +219,13 @@ public class ObjectScanner : MonoBehaviour
                 Debug.Log("Non anomaly scanned" + hit.collider.gameObject.name);
             }
         }
+    }
+
+    //coroutine to keep shader effect the same length as cooldown
+    IEnumerator RemoveScanShader(Renderer targetRenderer, Material originalMaterial, float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        targetRenderer.material = originalMaterial;
     }
     
     //Punishment for scanning wrong object
