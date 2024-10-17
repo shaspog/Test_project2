@@ -185,49 +185,54 @@ public class ObjectScanner : MonoBehaviour
             {
                 Material originalMaterial = hitRenderer.material;
                 hitRenderer.material = ScanMaterial;
-                StartCoroutine(RemoveScanShader(hitRenderer, originalMaterial, scanCooldown));
-            }
-
-            //anomaly track
-            bool foundAnomalyTag = false;
-
-            foreach (var pair in anomalyPairs)
-            {
-                if (hit.collider.CompareTag(Tag) && hit.collider.gameObject == pair.anomalyObject)
-                {              
-                        Debug.Log("Scanned anomaly" + pair.anomalyObject.name);
-
-                        //replace with non anomaly counterpart 
-                        pair.anomalyObject.SetActive(false);
-                        pair.normalObject.transform.position = pair.anomalyObject.transform.position;
-                        pair.normalObject.transform.rotation = pair.anomalyObject.transform.rotation;
-                        pair.normalObject.SetActive(true);
-
-                        // Refill anomaly bar by adding extra time for each scanned anomaly
-                        currentTime = Mathf.Min(currentTime + 5f, maxTime);
-                        anomalyTimerSlider.value = currentTime;
-
-                        foundAnomalyTag = true; //AnomalyTag scanned
-                        break; //exit loop after scanning 
-                    
-                }
-            }
-
-            if (!foundAnomalyTag)
-            {
-                NonAnomalyScanPunish();
-                Debug.Log("Non anomaly scanned" + hit.collider.gameObject.name);
-            }
+                StartCoroutine(ScanShader(hitRenderer, originalMaterial, hit.collider.gameObject));
+            }      
         }
     }
 
     //coroutine to keep shader effect the same length as cooldown
-    IEnumerator RemoveScanShader(Renderer targetRenderer, Material originalMaterial, float duration)
+    IEnumerator ScanShader(Renderer targetRenderer, Material originalMaterial, GameObject hitObject)
     {
-        yield return new WaitForSeconds(duration);
+        yield return new WaitForSeconds(scanCooldown);
         targetRenderer.material = originalMaterial;
+
+        AnomalyScan(hitObject);
     }
     
+    void AnomalyScan(GameObject hitObject)
+    {
+        //anomaly track
+        bool foundAnomalyTag = false;
+
+        foreach (var pair in anomalyPairs)
+        {
+            if (hitObject.CompareTag(Tag) && hitObject == pair.anomalyObject)
+            {
+                Debug.Log("Scanned anomaly" + pair.anomalyObject.name);
+
+                //replace with non anomaly counterpart 
+                pair.anomalyObject.SetActive(false);
+                pair.normalObject.transform.position = pair.anomalyObject.transform.position;
+                pair.normalObject.transform.rotation = pair.anomalyObject.transform.rotation;
+                pair.normalObject.SetActive(true);
+
+                // Refill anomaly bar by adding extra time for each scanned anomaly
+                currentTime = Mathf.Min(currentTime + 5f, maxTime);
+                anomalyTimerSlider.value = currentTime;
+
+                foundAnomalyTag = true; //AnomalyTag scanned
+                break; //exit loop after scanning 
+
+            }
+        }
+
+        if (!foundAnomalyTag)
+        {
+            NonAnomalyScanPunish();
+            Debug.Log("Non anomaly scanned" + hitObject.name);
+        }
+    }
+
     //Punishment for scanning wrong object
     void NonAnomalyScanPunish()
     {

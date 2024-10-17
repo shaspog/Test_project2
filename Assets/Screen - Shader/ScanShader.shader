@@ -1,11 +1,12 @@
-Shader "Custom/ScanShader"
+Shader "Custom/NeoMatrixScanEffect"
 {
     Properties
     {
-        _Color ("Color", Color) = (1,1,1,1)
+        _Color ("Base Color", Color) = (0,0,0,1) // dark blue
         _MainTex ("Texture", 2D) = "white" {}
         _ScanSpeed ("Scan Speed", Float) = 1
-        _ScanWidth ("Scan Width", Float) = 0.1
+        _ScanWidth ("Scan Width", Float) = 0.05 // Grid Effect
+        _GridSize ("Grid Size", Float) = 10 // GridSize
     }
     SubShader
     {
@@ -36,21 +37,32 @@ Shader "Custom/ScanShader"
             fixed4 _Color; // Use _Color instead of Color
             float _ScanSpeed;
             float _ScanWidth;
+            float _GridSize;
 
             v2f vert (appdata_t v)
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                o.uv = v.uv; // Use v.uv instead of v_uv
+                o.uv = v.uv;
                 return o;
             }
 
             fixed4 frag (v2f i) : SV_Target
             {
                 // Use built-in _Time variable provided by Unity
-                float scan = abs(frac(_Time.y * _ScanSpeed + i.uv.y) - 0.5) / _ScanWidth;
+                float scanX = abs(frac(_Time.y * _ScanSpeed + i.uv.x * _GridSize) - 0.5) / _ScanWidth;
+                float scanY = abs(frac(_Time.y * _ScanSpeed + i.uv.y * _GridSize) - 0.5) / _ScanWidth;
+                
+                // Combine the two scan effects
+                float scan = min(scanX, scanY);
+
+                // Set the color to dark blue and overlay the scan effect
                 fixed4 texColor = tex2D(_MainTex, i.uv);
-                return texColor * _Color * saturate(1 - scan);
+                fixed4 baseColor = fixed4(0.0, 0.0, 0.5, 1.0); // Dark blue color
+                fixed4 scanColor = fixed4(0.0, 1.0, 1.0, 1.0); // Cyan color for lines
+                
+                // Return the final color
+                return lerp(baseColor, scanColor, saturate(1 - scan));
             }
             ENDCG
         }
