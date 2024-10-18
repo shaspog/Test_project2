@@ -13,6 +13,7 @@ public class ObjectScanner : MonoBehaviour
         public GameObject anomalyObject;
         public GameObject normalObject;
         public Transform specificSpawnLocation;
+
     }
 
     // Anomaly Pair List
@@ -48,6 +49,12 @@ public class ObjectScanner : MonoBehaviour
     //ScanShader reference
     public Material ScanMaterial;
 
+    //Audio elements
+    
+    //private AudioSource successfulScan;
+    //private AudioSource falseScan;
+
+
     private void Start()
     {
         RandomizeAnomalies();
@@ -59,6 +66,9 @@ public class ObjectScanner : MonoBehaviour
         lastScanTime = scanCooldown; // scan from the get-go
         //Difficulty timer 
         difficultyTimer = 0f;
+
+        // successfulScan = GetComponent<AudioSource>();
+        // falseScan = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -210,6 +220,10 @@ public class ObjectScanner : MonoBehaviour
             {
                 Debug.Log("Scanned anomaly" + pair.anomalyObject.name);
 
+                 /*play successful scan audio
+                successfulScan.Play();
+                 */
+
                 //replace with non anomaly counterpart 
                 pair.anomalyObject.SetActive(false);
                 pair.normalObject.transform.position = pair.anomalyObject.transform.position;
@@ -221,6 +235,9 @@ public class ObjectScanner : MonoBehaviour
                 anomalyTimerSlider.value = currentTime;
 
                 foundAnomalyTag = true; //AnomalyTag scanned
+
+
+
                 break; //exit loop after scanning 
 
             }
@@ -228,6 +245,10 @@ public class ObjectScanner : MonoBehaviour
 
         if (!foundAnomalyTag)
         {
+            /*play unsuccessful scan audio
+            falseScan.Play();
+            */
+
             NonAnomalyScanPunish();
             Debug.Log("Non anomaly scanned" + hitObject.name);
         }
@@ -247,5 +268,6 @@ public class ObjectScanner : MonoBehaviour
             GameOverCut(); //Trigger cutscene for Game OVER!!
         }
     }
+
 
 }
