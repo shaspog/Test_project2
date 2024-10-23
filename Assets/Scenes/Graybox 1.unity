@@ -23,9 +23,9 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1.03
+  m_AmbientIntensity: 1.42
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.645544, g: 0.6906819, b: 0.8050314, a: 1}
+  m_SubtractiveShadowColor: {r: 0.75044495, g: 0.7792927, b: 0.8553459, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: df3b56ac313639c41a7aedf3caad0563, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 299639868}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -433,6 +433,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a7f37d535b2264497be8a7e289921f42, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7f37d535b2264497be8a7e289921f42, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1077,6 +1081,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OfficeTable (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1130,7 +1138,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &341782559
 Transform:
@@ -1318,10 +1326,10 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 7.36
-  m_Range: 2.65
-  m_SpotAngle: 26.154673
+  m_Color: {r: 0.6887343, g: 0.93710685, b: 0.03830923, a: 1}
+  m_Intensity: 90.31
+  m_Range: 3.8492517
+  m_SpotAngle: 56.17893
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -1364,7 +1372,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 9.18e-43, y: -1.0150663e+31, z: 9.18e-43, w: -4.160997e+30}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1378,7 +1386,7 @@ Transform:
   m_GameObject: {fileID: 453104818}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -2.819, y: 2.793, z: 1.59}
+  m_LocalPosition: {x: -0.22, y: 3.61, z: 1.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1435,6 +1443,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
       propertyPath: m_Name
       value: OfficeTable (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1710,6 +1722,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OfficeTable (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1849,6 +1865,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
       propertyPath: m_Name
       value: OfficeTable (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2736,7 +2756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &715085697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2866,6 +2886,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
       propertyPath: m_Name
       value: OfficeTable (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3230,6 +3254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OfficeTable (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3390,6 +3418,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
       propertyPath: m_Name
       value: OfficeTable (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4349,7 +4381,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325677562}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
@@ -4737,6 +4769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OfficeTable (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4827,6 +4863,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
       propertyPath: m_Name
       value: OfficeTable (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4924,6 +4964,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OfficeTable (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5014,6 +5058,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
       propertyPath: m_Name
       value: OfficeTable (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5152,7 +5200,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1532145158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5304,6 +5352,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
       propertyPath: m_Name
       value: OfficeTable (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5667,6 +5719,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OfficeTable (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5757,6 +5813,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
       propertyPath: m_Name
       value: OfficeTable (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6292,6 +6352,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
       propertyPath: m_Name
       value: OfficeTable
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5e558b26f688684f80bf2ffe52136ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
