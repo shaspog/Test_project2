@@ -14,6 +14,7 @@ public class ChairMovement : MonoBehaviour
         // automatically start moving after 5 seconds
         Invoke("StartMoving", 5f);
     }
+ 
 
     void Update()
     {
