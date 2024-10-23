@@ -8,9 +8,17 @@ public class ARtoVR : MonoBehaviour
 {
     public EyesClosing EyesClosing;
    
+    
     void OnTriggerEnter(Collider Headboundary)
     {
         StartCoroutine(ARtoVRdelay());
+        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
+
+        if (meshRenderer != null)
+        {
+            // Disable the MeshRenderer to make the object invisible
+            meshRenderer.enabled = false;
+        }
     }
 
     IEnumerator ARtoVRdelay()
