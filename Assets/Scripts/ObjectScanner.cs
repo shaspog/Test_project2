@@ -69,6 +69,7 @@ public class ObjectScanner : MonoBehaviour
         lastScanTime = scanCooldown; // scan from the get-go
         //Difficulty timer 
         difficultyTimer = 0f;
+
         //Next anomaly delay
         DelayAnomaly(10);
         secondAnomalyMarker = 1;
@@ -110,7 +111,6 @@ public class ObjectScanner : MonoBehaviour
     void GameOverCut()
     {
         Debug.Log("Game Over"); //Change Later to cutscene or transition all of it to a different script
-        SceneManager.LoadScene("Gameover Screen");
     }
     #endregion 
 

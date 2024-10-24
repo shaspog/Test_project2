@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ScanMat
-  m_Shader: {fileID: 4800000, guid: 40f8e31c186b59b47a7b77dbc88f48da, type: 3}
+  m_Shader: {fileID: 4800000, guid: fbe1887b2c204164299c68dd7f3fd28f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
