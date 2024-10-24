@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class ObjectScanner : MonoBehaviour
 {
@@ -30,6 +31,8 @@ public class ObjectScanner : MonoBehaviour
     public Transform rightController;
     //Input reference for trigger
     public InputActionProperty rightHandTriggerAction; // Works like a charm :3
+    //second anomaly delay marker
+    public float secondAnomalyMarker = 0;
 
 
     // Difficulty Elements 
@@ -66,6 +69,10 @@ public class ObjectScanner : MonoBehaviour
         lastScanTime = scanCooldown; // scan from the get-go
         //Difficulty timer 
         difficultyTimer = 0f;
+        //Next anomaly delay
+        DelayAnomaly(10);
+        secondAnomalyMarker = 1;
+        
 
         // successfulScan = GetComponent<AudioSource>();
         // falseScan = GetComponent<AudioSource>();
@@ -85,6 +92,12 @@ public class ObjectScanner : MonoBehaviour
                 Debug.Log("ability on cd"); // Change later into UI pop-up
             }
         }
+
+        if(secondAnomalyMarker == 1)
+        {
+            DelayAnomaly(10);
+            RandomizeAnomalies();
+        }
         //Update Timer Function
         UpdateTimer();
 
@@ -97,6 +110,7 @@ public class ObjectScanner : MonoBehaviour
     void GameOverCut()
     {
         Debug.Log("Game Over"); //Change Later to cutscene or transition all of it to a different script
+        SceneManager.LoadScene("Gameover Screen");
     }
     #endregion 
 
@@ -164,6 +178,17 @@ public class ObjectScanner : MonoBehaviour
         Transform chosenLocation = availableLocations[randomIndex];
         availableLocations.RemoveAt(randomIndex);
         return chosenLocation;
+    }
+
+     IEnumerator AnomalyDelayTime(float delayTime)
+    {
+        //delay of time
+        yield return new WaitForSeconds(delayTime);
+    }
+
+    void DelayAnomaly(float delayTime)
+    {
+        StartCoroutine(AnomalyDelayTime(delayTime));
     }
 
     #endregion
