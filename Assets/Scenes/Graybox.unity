@@ -377,6 +377,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7543449481879904153, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: -6679160216961108076, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: -5076484507258936684, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
       propertyPath: m_Lightmapping
       value: 2
@@ -397,10 +405,22 @@ PrefabInstance:
       propertyPath: m_BoundingSphereOverride.z
       value: NaN
       objectReference: {fileID: 0}
+    - target: {fileID: -4843547523223851315, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: 919132149155446097, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
       propertyPath: m_Name
       value: uploads-files-2730037-metal_wood_cabinet (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1052405077064156674, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: 4928643293900733339, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
@@ -2342,6 +2362,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7543449481879904153, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: -6679160216961108076, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: -5076484507258936684, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
       propertyPath: m_Lightmapping
       value: 2
@@ -2366,6 +2394,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: uploads-files-2730037-metal_wood_cabinet (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1052405077064156674, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: 4928643293900733339, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
@@ -2977,6 +3013,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7543449481879904153, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: -6679160216961108076, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: -5076484507258936684, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
       propertyPath: m_Lightmapping
       value: 2
@@ -3001,6 +3045,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: uploads-files-2730037-metal_wood_cabinet (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1052405077064156674, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: 4928643293900733339, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
@@ -3467,7 +3519,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d900049f3018945e9b707af0c316e45c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1e9fd0c582044be39736ab8082fb870, type: 2}
     - target: {fileID: 919132149155446097, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Name
       value: office chair 2 (18)
@@ -5365,6 +5417,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92c4d016986b643fa8502911ca400c9a, type: 2}
     - target: {fileID: 919132149155446097, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
       propertyPath: m_Name
       value: futuristic computer REAL (9)
@@ -5469,6 +5525,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92c4d016986b643fa8502911ca400c9a, type: 2}
     - target: {fileID: 919132149155446097, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
       propertyPath: m_Name
       value: futuristic computer REAL (1)
@@ -5713,6 +5773,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92c4d016986b643fa8502911ca400c9a, type: 2}
     - target: {fileID: 919132149155446097, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
       propertyPath: m_Name
       value: futuristic computer REAL (6)
@@ -5915,6 +5979,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92c4d016986b643fa8502911ca400c9a, type: 2}
     - target: {fileID: 919132149155446097, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
       propertyPath: m_Name
       value: futuristic computer REAL (3)
@@ -6714,6 +6782,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7543449481879904153, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: -6679160216961108076, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: -5076484507258936684, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
       propertyPath: m_Lightmapping
       value: 2
@@ -6738,6 +6814,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: uploads-files-2730037-metal_wood_cabinet (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1052405077064156674, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: 4928643293900733339, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
@@ -7584,6 +7668,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7543449481879904153, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: -6679160216961108076, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: -5076484507258936684, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
       propertyPath: m_Lightmapping
       value: 2
@@ -7608,6 +7700,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: uploads-files-2730037-metal_wood_cabinet (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1052405077064156674, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: 4928643293900733339, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
@@ -8178,7 +8278,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d900049f3018945e9b707af0c316e45c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1e9fd0c582044be39736ab8082fb870, type: 2}
     - target: {fileID: 919132149155446097, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Name
       value: office chair 2 (21)
@@ -9083,7 +9183,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d900049f3018945e9b707af0c316e45c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1e9fd0c582044be39736ab8082fb870, type: 2}
     - target: {fileID: 919132149155446097, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Name
       value: office chair 2 (15)
@@ -9569,7 +9669,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d900049f3018945e9b707af0c316e45c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1e9fd0c582044be39736ab8082fb870, type: 2}
     - target: {fileID: 919132149155446097, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Name
       value: office chair 2 (12)
@@ -10098,6 +10198,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92c4d016986b643fa8502911ca400c9a, type: 2}
     - target: {fileID: 919132149155446097, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
       propertyPath: m_Name
       value: futuristic computer REAL (3)
@@ -10803,6 +10907,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92c4d016986b643fa8502911ca400c9a, type: 2}
     - target: {fileID: 919132149155446097, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
       propertyPath: m_Name
       value: futuristic computer REAL (2)
@@ -11409,7 +11517,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d900049f3018945e9b707af0c316e45c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1e9fd0c582044be39736ab8082fb870, type: 2}
     - target: {fileID: 919132149155446097, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Name
       value: office chair 2 (10)
@@ -11590,6 +11698,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7543449481879904153, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: -6679160216961108076, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: -5076484507258936684, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
       propertyPath: m_Lightmapping
       value: 2
@@ -11614,6 +11730,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: uploads-files-2730037-metal_wood_cabinet (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1052405077064156674, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: 4928643293900733339, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
@@ -13250,6 +13374,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7543449481879904153, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: -6679160216961108076, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: -5076484507258936684, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
       propertyPath: m_Lightmapping
       value: 2
@@ -13274,6 +13406,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: uploads-files-2730037-metal_wood_cabinet (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1052405077064156674, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: 4928643293900733339, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
@@ -14023,6 +14163,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7543449481879904153, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: -6679160216961108076, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: -5076484507258936684, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
       propertyPath: m_Lightmapping
       value: 2
@@ -14047,6 +14195,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: uploads-files-2730037-metal_wood_cabinet (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1052405077064156674, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: 4928643293900733339, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
@@ -14985,7 +15141,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d900049f3018945e9b707af0c316e45c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1e9fd0c582044be39736ab8082fb870, type: 2}
     - target: {fileID: 919132149155446097, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Name
       value: office chair 2 (8)
@@ -15246,10 +15402,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4586482628429453916, guid: 57e95438de6344f9ebd7de6b1a447fd8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 26140ad0126ec4763b3506ad2f58c3cb, type: 2}
+    - target: {fileID: -250850960657670917, guid: 57e95438de6344f9ebd7de6b1a447fd8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 26140ad0126ec4763b3506ad2f58c3cb, type: 2}
     - target: {fileID: 919132149155446097, guid: 57e95438de6344f9ebd7de6b1a447fd8, type: 3}
       propertyPath: m_Name
       value: uploads-files-2938159-Fruits
       objectReference: {fileID: 0}
+    - target: {fileID: 1194998974219624502, guid: 57e95438de6344f9ebd7de6b1a447fd8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 26140ad0126ec4763b3506ad2f58c3cb, type: 2}
     - target: {fileID: 2382799219754379413, guid: 57e95438de6344f9ebd7de6b1a447fd8, type: 3}
       propertyPath: m_Lightmapping
       value: 2
@@ -15294,6 +15462,10 @@ PrefabInstance:
       propertyPath: m_BoundingSphereOverride.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8328555342445772241, guid: 57e95438de6344f9ebd7de6b1a447fd8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 26140ad0126ec4763b3506ad2f58c3cb, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 57e95438de6344f9ebd7de6b1a447fd8, type: 3}
@@ -15798,6 +15970,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92c4d016986b643fa8502911ca400c9a, type: 2}
     - target: {fileID: 919132149155446097, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
       propertyPath: m_Name
       value: futuristic computer REAL (5)
@@ -18105,6 +18281,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92c4d016986b643fa8502911ca400c9a, type: 2}
     - target: {fileID: 919132149155446097, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
       propertyPath: m_Name
       value: futuristic computer REAL (4)
@@ -18231,6 +18411,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92c4d016986b643fa8502911ca400c9a, type: 2}
     - target: {fileID: 919132149155446097, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
       propertyPath: m_Name
       value: futuristic computer REAL (4)
@@ -19450,6 +19634,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7543449481879904153, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: -6679160216961108076, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: -5076484507258936684, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
       propertyPath: m_Lightmapping
       value: 2
@@ -19470,10 +19662,26 @@ PrefabInstance:
       propertyPath: m_BoundingSphereOverride.z
       value: NaN
       objectReference: {fileID: 0}
+    - target: {fileID: -4843547523223851315, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: 256661878609299009, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: 919132149155446097, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
       propertyPath: m_Name
       value: uploads-files-2730037-metal_wood_cabinet
       objectReference: {fileID: 0}
+    - target: {fileID: 1052405077064156674, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: 4928643293900733339, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
@@ -20757,6 +20965,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92c4d016986b643fa8502911ca400c9a, type: 2}
     - target: {fileID: 919132149155446097, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
       propertyPath: m_Name
       value: futuristic computer REAL (1)
@@ -20927,6 +21139,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7543449481879904153, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: -6679160216961108076, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: -5497068538484171527, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: -5076484507258936684, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
       propertyPath: m_Lightmapping
       value: 2
@@ -20951,6 +21175,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: uploads-files-2730037-metal_wood_cabinet (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1052405077064156674, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: 4928643293900733339, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
@@ -21731,7 +21963,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d900049f3018945e9b707af0c316e45c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1e9fd0c582044be39736ab8082fb870, type: 2}
     - target: {fileID: 919132149155446097, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Name
       value: office chair 2 (11)
@@ -22680,7 +22912,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d900049f3018945e9b707af0c316e45c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1e9fd0c582044be39736ab8082fb870, type: 2}
     - target: {fileID: 919132149155446097, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Name
       value: office chair 2 (6)
@@ -23073,6 +23305,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7543449481879904153, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: -6679160216961108076, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: -5076484507258936684, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
       propertyPath: m_Lightmapping
       value: 2
@@ -23097,6 +23337,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: uploads-files-2730037-metal_wood_cabinet (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1052405077064156674, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: 4928643293900733339, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
@@ -23607,7 +23855,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d900049f3018945e9b707af0c316e45c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1e9fd0c582044be39736ab8082fb870, type: 2}
     - target: {fileID: 919132149155446097, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Name
       value: office chair 2 (9)
@@ -23927,7 +24175,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d900049f3018945e9b707af0c316e45c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1e9fd0c582044be39736ab8082fb870, type: 2}
     - target: {fileID: 919132149155446097, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Name
       value: office chair 2 (19)
@@ -24104,6 +24352,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92c4d016986b643fa8502911ca400c9a, type: 2}
     - target: {fileID: 919132149155446097, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
       propertyPath: m_Name
       value: futuristic computer REAL (7)
@@ -24981,6 +25233,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92c4d016986b643fa8502911ca400c9a, type: 2}
     - target: {fileID: 919132149155446097, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
       propertyPath: m_Name
       value: futuristic computer REAL
@@ -25751,7 +26007,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d900049f3018945e9b707af0c316e45c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1e9fd0c582044be39736ab8082fb870, type: 2}
     - target: {fileID: 919132149155446097, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Name
       value: office chair 2 (17)
@@ -26664,6 +26920,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92c4d016986b643fa8502911ca400c9a, type: 2}
     - target: {fileID: 919132149155446097, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
       propertyPath: m_Name
       value: futuristic computer REAL (8)
@@ -26978,6 +27238,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7543449481879904153, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: -6679160216961108076, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: -5076484507258936684, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
       propertyPath: m_Lightmapping
       value: 2
@@ -27002,6 +27270,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: uploads-files-2730037-metal_wood_cabinet (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1052405077064156674, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: 4928643293900733339, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
@@ -27761,7 +28037,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d900049f3018945e9b707af0c316e45c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1e9fd0c582044be39736ab8082fb870, type: 2}
     - target: {fileID: 919132149155446097, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Name
       value: office chair 2 (13)
@@ -28315,7 +28591,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d900049f3018945e9b707af0c316e45c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1e9fd0c582044be39736ab8082fb870, type: 2}
     - target: {fileID: 919132149155446097, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Name
       value: office chair 2 (7)
@@ -30175,7 +30451,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d900049f3018945e9b707af0c316e45c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1e9fd0c582044be39736ab8082fb870, type: 2}
     - target: {fileID: 919132149155446097, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Name
       value: office chair 2 (16)
@@ -30922,10 +31198,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2817078924043229413, guid: 0a52b0b627d894fd396cb7d36d736afc, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 925f28f0f580b384db2fcaf43e4b9dfd, type: 2}
     - target: {fileID: 919132149155446097, guid: 0a52b0b627d894fd396cb7d36d736afc, type: 3}
       propertyPath: m_Name
       value: electric-kettle-001
       objectReference: {fileID: 0}
+    - target: {fileID: 8993150938756767870, guid: 0a52b0b627d894fd396cb7d36d736afc, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 925f28f0f580b384db2fcaf43e4b9dfd, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31458,6 +31742,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7543449481879904153, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: -6679160216961108076, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: -5076484507258936684, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
       propertyPath: m_Lightmapping
       value: 2
@@ -31482,6 +31774,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: uploads-files-2730037-metal_wood_cabinet (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1052405077064156674, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: 4928643293900733339, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 5543e7ab0dcbe4b10a2ea9368b6d6636, type: 3}
@@ -32422,6 +32722,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92c4d016986b643fa8502911ca400c9a, type: 2}
     - target: {fileID: 919132149155446097, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
       propertyPath: m_Name
       value: futuristic computer REAL (6)
@@ -33024,6 +33328,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92c4d016986b643fa8502911ca400c9a, type: 2}
     - target: {fileID: 919132149155446097, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
       propertyPath: m_Name
       value: futuristic computer REAL (2)
@@ -38266,7 +38574,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d900049f3018945e9b707af0c316e45c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1e9fd0c582044be39736ab8082fb870, type: 2}
     - target: {fileID: 919132149155446097, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Name
       value: office chair 2 (14)
@@ -38627,6 +38935,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92c4d016986b643fa8502911ca400c9a, type: 2}
     - target: {fileID: 919132149155446097, guid: 66aca9ae80aa04911bd4806c71b91e3b, type: 3}
       propertyPath: m_Name
       value: futuristic computer REAL (5)
@@ -39279,7 +39591,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d900049f3018945e9b707af0c316e45c, type: 2}
+      objectReference: {fileID: 2100000, guid: c1e9fd0c582044be39736ab8082fb870, type: 2}
     - target: {fileID: 919132149155446097, guid: 334270d0797b1984ab80dcc3a0256621, type: 3}
       propertyPath: m_Name
       value: office chair 2 (20)
@@ -39613,6 +39925,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 34230775}
     m_Modifications:
+    - target: {fileID: 3615780645335122952, guid: 013df32bdf2e74949ae1449d99a26531, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: 6126303465600845831, guid: 013df32bdf2e74949ae1449d99a26531, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
+    - target: {fileID: 6997348113988919284, guid: 013df32bdf2e74949ae1449d99a26531, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: 8196941502375778424, guid: 013df32bdf2e74949ae1449d99a26531, type: 3}
       propertyPath: m_LocalScale.x
       value: 11.160716
@@ -39665,6 +39989,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8705809339199568273, guid: 013df32bdf2e74949ae1449d99a26531, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aac1a372a524b4d399aa497a7a3db330, type: 2}
     - target: {fileID: 8830066219549950658, guid: 013df32bdf2e74949ae1449d99a26531, type: 3}
       propertyPath: m_Name
       value: uploads-files-2730037-metal_wood_cabinet (1)
