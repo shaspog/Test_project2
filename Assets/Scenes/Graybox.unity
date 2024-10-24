@@ -9096,8 +9096,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPairs:
-  - anomalyObject: {fileID: 0}
-    normalObject: {fileID: 0}
+  - anomalyObject: {fileID: 218862895}
+    normalObject: {fileID: 1387472856}
     specificSpawnLocation: {fileID: 1016895964}
   spawnLocations:
   - {fileID: 0}
@@ -9132,7 +9132,7 @@ MonoBehaviour:
   anomalyTimerSlider: {fileID: 1372970750}
   maxTime: 100
   scanCooldown: 3
-  ScanMaterial: {fileID: 2100000, guid: eb81e64300df34140b2a80aaaf2b8a80, type: 2}
+  ScanMaterial: {fileID: 2100000, guid: 71393249b49bf634dadecc275e6a793f, type: 2}
 --- !u!114 &528964996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22835,7 +22835,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 349.2}
+  m_AnchoredPosition: {x: -10, y: 247}
   m_SizeDelta: {x: 600, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1372970750
