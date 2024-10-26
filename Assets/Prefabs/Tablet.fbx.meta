@@ -3,7 +3,27 @@ guid: b681925e25de6b54bba60c7d3e882e7e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Button.001
+    second: {fileID: 2100000, guid: a809e1f232adc3641ba26da3d4297f85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CameraIsland.001
+    second: {fileID: 2100000, guid: a3202df9a1e8f6d46818bf5d1bbc4f21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Frame.001
+    second: {fileID: 2100000, guid: bc2b31ca11c8f02458dd628fc7cd5238, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Screen.001
+    second: {fileID: 2100000, guid: 50301234518300942b8bc02c040eded1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
