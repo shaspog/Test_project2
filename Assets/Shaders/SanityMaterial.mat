@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SanityMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: 0734175c2d0df0d46b683bf1c5e5959c, type: 3}
+  m_Shader: {fileID: 4800000, guid: e37d28abc67fb8e4094620590dbba50f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -54,8 +54,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _GrainIntensity: 0
+    - _MaskRadius: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Sanity: 0.85501206
+    - _VignetteIntensity: 0
     m_Colors: []
   m_BuildTextureStacks: []
