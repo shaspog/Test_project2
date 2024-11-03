@@ -9,7 +9,9 @@ Shader "Custom/SanityShade"
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { "Queue" = "Overlay" "IgnoreProjector" = "True" }
+        ZWrite Off
+        Blend SrcAlpha OneMinusSrcAlpha
         LOD 100
 
         Pass
@@ -55,7 +57,7 @@ Shader "Custom/SanityShade"
 
                 // Vignette effect
                 float dist = distance(uv, float2(0.5, 0.5));
-                float vignette = 1.0 - smoothstep(0.4, 0.8, dist + _VignetteIntensity);
+                float vignette = 1.0 - smoothstep(0.25, 0.7, dist + _VignetteIntensity);
 
                 // Grain effect
                 float grain = _GrainIntensity * (randomNoise(uv) - 0.5);
@@ -69,6 +71,9 @@ Shader "Custom/SanityShade"
                 // Apply vignette, grain, and mask effects
                 col.rgb = col.rgb * vignette + grain;
                 col.rgb *= mask;
+
+                // Ensure transparency is applied for overlay
+                col.a = vignette * mask;
 
                 return col;
             }
