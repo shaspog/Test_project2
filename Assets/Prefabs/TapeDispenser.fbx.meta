@@ -3,7 +3,32 @@ guid: 9cfda9380fd918846bb1705f9b427693
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Button
+    second: {fileID: 2100000, guid: 60ba4da07c2ed4f4f8b748ca87315111, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cutter
+    second: {fileID: 2100000, guid: eb712047b68b3d3428f69f969807e0a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Frame
+    second: {fileID: 2100000, guid: a4ddc6a25e143cf408de623aa1e57eb6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Holder
+    second: {fileID: 2100000, guid: 6706096af288bef42ad50a48f64277ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tape
+    second: {fileID: 2100000, guid: a6272bd8305d44c4997e4147c780f375, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

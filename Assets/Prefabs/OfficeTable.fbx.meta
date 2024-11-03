@@ -1,9 +1,24 @@
 fileFormatVersion: 2
-guid: e5e558b26f688684f80bf2ffe52136ef
+guid: c0144d5e1e610c149a761e73e1e53ba9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Frame
+    second: {fileID: 2100000, guid: 9e5dde65c7c8b134b99c3e431dc5634f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stands
+    second: {fileID: 2100000, guid: 9788d3ae9bc1da648a527ae4a42f7d2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TableTop
+    second: {fileID: 2100000, guid: 9d3ae261686a7e941929bbc0c2ce8f04, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
