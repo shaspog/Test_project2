@@ -8,17 +8,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Door
-    second: {fileID: 2100000, guid: 3a94bbb4cab2e6748b1ae1e127bce30a, type: 2}
+    second: {fileID: 2100000, guid: 42d0f8593e03a254f8859d6bab7f918f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Frame
-    second: {fileID: 2100000, guid: 02cb6e40cd5be3543b17f5a2a4505455, type: 2}
+    second: {fileID: 2100000, guid: 131bc7a9de130de4c9af98ac0349474c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Handle&Hinges
-    second: {fileID: 2100000, guid: 521163aef95e5ca47aa76d9980cc4508, type: 2}
+    second: {fileID: 2100000, guid: 029ff92910657f64083665c8df9a4c5d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
