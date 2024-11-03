@@ -57,7 +57,8 @@ Shader "Custom/SanityShade"
 
                 // Vignette effect
                 float dist = distance(uv, float2(0.5, 0.5));
-                float vignette = 1.0 - smoothstep(0.25, 0.7, dist + _VignetteIntensity);
+                float vignette = smoothstep(0.3 - _VignetteIntensity * 0.5, 0.6, dist);
+                vignette *= 1.5;
 
                 // Grain effect
                 float grain = _GrainIntensity * (randomNoise(uv) - 0.5);
