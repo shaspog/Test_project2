@@ -4,12 +4,15 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI timerText;
+    public TextMeshProUGUI invertedTimerText; 
+    public GameObject anomalyClock; 
     public float countdownTime = 600f; // 10 minutes 
     private bool isCountingDown = true;
 
     void Start()
     {
         UpdateTimerText(countdownTime);
+        invertedTimerText.gameObject.SetActive(false); 
     }
 
     void Update()
@@ -26,6 +29,18 @@ public class Timer : MonoBehaviour
                 TimerEnded();
             }
         }
+
+        if (anomalyClock.activeSelf)
+        {
+            timerText.gameObject.SetActive(false); 
+            invertedTimerText.gameObject.SetActive(true); 
+            UpdateInvertedTimerText(countdownTime);
+        }
+        else
+        {
+            timerText.gameObject.SetActive(true); 
+            invertedTimerText.gameObject.SetActive(false); 
+        }
     }
 
     void UpdateTimerText(float timeLeft)
@@ -33,6 +48,13 @@ public class Timer : MonoBehaviour
         int minutes = Mathf.FloorToInt(timeLeft / 60);
         int seconds = Mathf.FloorToInt(timeLeft % 60);
         timerText.text = $"{minutes:00}:{seconds:00}";
+    }
+
+    void UpdateInvertedTimerText(float timeLeft)
+    {
+        int minutes = Mathf.FloorToInt(timeLeft / 60);
+        int seconds = Mathf.FloorToInt(timeLeft % 60);
+        invertedTimerText.text = $"{minutes:00}:{seconds:00}"; 
     }
 
     void TimerEnded()
