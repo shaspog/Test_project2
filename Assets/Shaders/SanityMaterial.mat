@@ -59,6 +59,6 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Sanity: 0.85501206
-    - _VignetteIntensity: 0.29970202
+    - _VignetteIntensity: 0.2
     m_Colors: []
   m_BuildTextureStacks: []

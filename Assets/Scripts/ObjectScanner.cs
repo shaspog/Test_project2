@@ -48,7 +48,7 @@ public class ObjectScanner : MonoBehaviour
 
     //UI Elements
     public Slider anomalyTimerSlider;
-    public float maxTime = 100f;
+    public float maxTime = 300f;
     private float currentTime;
 
     //Cooldown for scanner
@@ -388,7 +388,7 @@ public class ObjectScanner : MonoBehaviour
         pair.normalObject.SetActive(true);
 
         // Refill anomaly bar by adding extra time for each scanned anomaly
-        currentTime = Mathf.Min(currentTime + 5f, maxTime);
+        currentTime = Mathf.Min(currentTime + 20f, maxTime);
         anomalyTimerSlider.value = currentTime;
     }
 
@@ -396,7 +396,7 @@ public class ObjectScanner : MonoBehaviour
     void NonAnomalyScanPunish()
     {
         // deduct time for non anomaly scan
-        float deductionAmount = 5f;
+        float deductionAmount = 15f;
         currentTime = Mathf.Max(currentTime - deductionAmount, 0); //prevent going below 0
         anomalyTimerSlider.value = currentTime;
         failedScanSource.Play();
