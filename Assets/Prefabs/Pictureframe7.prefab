@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7117337944894282317}
   - component: {fileID: 8689616678271857703}
   - component: {fileID: 204065210883148127}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 8361542047020659931}
   - component: {fileID: 7632739413644255424}
   - component: {fileID: 2350107109047773010}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6765572785988536057}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pictureframe7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 445546271058039129}
   - component: {fileID: 2300007546252842287}
   - component: {fileID: 1652386862843518533}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}

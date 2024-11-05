@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7724734301030282831}
   - component: {fileID: 8684613750110501200}
   - component: {fileID: 2859428963285281994}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,6 +154,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7146521406498821007, guid: e7728d20a79986d449f89f68642d99dc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -804731622281664130, guid: e7728d20a79986d449f89f68642d99dc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -161,6 +165,18 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7728d20a79986d449f89f68642d99dc, type: 3}
       propertyPath: m_Name
       value: Pictureframe1_Anomaly
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7728d20a79986d449f89f68642d99dc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7728d20a79986d449f89f68642d99dc, type: 3}
+      propertyPath: m_TagString
+      value: Anomaly
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162820104835090806, guid: e7728d20a79986d449f89f68642d99dc, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8029106800918022278, guid: e7728d20a79986d449f89f68642d99dc, type: 3}
       propertyPath: m_Materials.Array.data[0]
