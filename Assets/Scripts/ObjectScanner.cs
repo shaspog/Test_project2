@@ -69,6 +69,8 @@ public class ObjectScanner : MonoBehaviour
     private AudioSource failedScanSource;
     private AudioSource scanningScanSource;
 
+    public GameObject gameOverScreen;
+
 
     private void Start()
     {
@@ -130,6 +132,7 @@ public class ObjectScanner : MonoBehaviour
     void GameOverCut()
     {
         Debug.Log("Game Over"); //Change Later to cutscene or transition all of it to a different script
+        gameOverScreen.SetActive(true);
     }
     #endregion 
 

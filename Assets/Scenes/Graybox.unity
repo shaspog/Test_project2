@@ -11550,6 +11550,7 @@ MonoBehaviour:
   successScanClip: {fileID: 8300000, guid: 4892e8a262a6418499f3b1bd5b7d12d5, type: 3}
   failedScanClip: {fileID: 8300000, guid: d89ddbd7d7a33244ab87b5b088066aa7, type: 3}
   scanningScanClip: {fileID: 8300000, guid: b432f280ed045af4ca02e18d26cc3e53, type: 3}
+  gameOverScreen: {fileID: 1751168023}
 --- !u!114 &528964996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32176,6 +32177,10 @@ PrefabInstance:
     - target: {fileID: 2508968306381731785, guid: 1f2727737014968478d22066b7a57dde, type: 3}
       propertyPath: m_Name
       value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508968306381731785, guid: 1f2727737014968478d22066b7a57dde, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3467256102120656671, guid: 1f2727737014968478d22066b7a57dde, type: 3}
       propertyPath: m_Pivot.x
