@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class ObjectScanner : MonoBehaviour
 {
@@ -40,9 +39,6 @@ public class ObjectScanner : MonoBehaviour
     public Transform rightController;
     //Input reference for trigger
     public InputActionProperty rightHandTriggerAction; // Works like a charm :3
-    //second anomaly delay marker
-   // public float secondAnomalyMarker = 0;
-
 
     // Difficulty Elements 
     public float difficultyIncreaseSpeed = 40f;
@@ -62,10 +58,16 @@ public class ObjectScanner : MonoBehaviour
     //ScanShader reference
     public Material ScanMaterial;
 
+
     //Audio elements
-    
-    //private AudioSource successfulScan;
-    //private AudioSource falseScan;
+    [Header("Audio")]
+    public AudioClip successScanClip;
+    public AudioClip failedScanClip;
+    public AudioClip scanningScanClip;
+
+    private AudioSource successScanSource;
+    private AudioSource failedScanSource;
+    private AudioSource scanningScanSource;
 
 
     private void Start()
@@ -86,13 +88,14 @@ public class ObjectScanner : MonoBehaviour
         //Spawn random anomalies
         StartCoroutine(SpawnAnomalies());
 
-        //Next anomaly delay
-      //  DelayAnomaly(10);
-       // secondAnomalyMarker = 1;
-        
+        successScanSource = gameObject.AddComponent<AudioSource>();
+        successScanSource.clip = successScanClip;
 
-        // successfulScan = GetComponent<AudioSource>();
-        // falseScan = GetComponent<AudioSource>();
+        failedScanSource = gameObject.AddComponent<AudioSource>();
+        failedScanSource.clip = failedScanClip;
+
+        scanningScanSource = gameObject.AddComponent<AudioSource>();
+        scanningScanSource.clip = scanningScanClip;
     }
 
     void Update()
@@ -110,11 +113,10 @@ public class ObjectScanner : MonoBehaviour
             }
         }
 
-        //if(secondAnomalyMarker == 1)
-        //{
-           // DelayAnomaly(10);
-         //   RandomizeAnomalies();
-       // }
+        if (scanningScanSource.isPlaying && Time.time >= lastScanTime + scanCooldown)
+        {
+            scanningScanSource.Stop();
+        }
 
         //Update Timer Function
         UpdateTimer();
@@ -322,6 +324,8 @@ public class ObjectScanner : MonoBehaviour
     //coroutine to keep shader effect the same length as cooldown
     IEnumerator ScanShader(Renderer targetRenderer, Material originalMaterial, GameObject hitObject)
     {
+        scanningScanSource.Play();
+
         yield return new WaitForSeconds(scanCooldown);
         targetRenderer.material = originalMaterial;
 
@@ -342,6 +346,7 @@ public class ObjectScanner : MonoBehaviour
                 break; //exit loop after scanning 
             }
         }
+
 
         if (!foundAnomalyTag && currentDifficultyIndex < difficultyLevels.Count)
         {
@@ -370,11 +375,9 @@ public class ObjectScanner : MonoBehaviour
     void ProcAnomalyScan(AnomalyPair pair)
     {
         Debug.Log("Scanned anomaly" + pair.anomalyObject.name);
-
-        /*play successful scan audio
-       successfulScan.Play();
-        */
-
+      
+        successScanSource.Play();
+        
         //replace with non anomaly counterpart 
         pair.anomalyObject.SetActive(false);
         pair.normalObject.transform.position = pair.anomalyObject.transform.position;
@@ -393,6 +396,7 @@ public class ObjectScanner : MonoBehaviour
         float deductionAmount = 5f;
         currentTime = Mathf.Max(currentTime - deductionAmount, 0); //prevent going below 0
         anomalyTimerSlider.value = currentTime;
+        failedScanSource.Play();
 
         if (currentTime <= 0)
         {

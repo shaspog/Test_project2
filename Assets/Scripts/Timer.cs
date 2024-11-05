@@ -1,34 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI timerText;
-    [SerializeField] float remainingTime;
-    public GameObject GameOverScreen;
+    public TextMeshProUGUI timerText;
+    public float countdownTime = 600f; // 10 minutes 
+    private bool isCountingDown = true;
 
-    private void Awake()
+    void Start()
     {
-        GameOverScreen.SetActive(false);
+        UpdateTimerText(countdownTime);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (remainingTime > 0)
+        if (isCountingDown && countdownTime > 0)
         {
-            remainingTime -= Time.deltaTime;
+            countdownTime -= Time.deltaTime;
+            UpdateTimerText(countdownTime);
+
+            if (countdownTime <= 0)
+            {
+                countdownTime = 0;
+                isCountingDown = false;
+                TimerEnded();
+            }
         }
-        else if (remainingTime < 0)
-        {
-            remainingTime = 0;
-            GameOverScreen.SetActive(true);
-        }
-        
-        int minutes = Mathf.FloorToInt(remainingTime / 60);
-        int seconds = Mathf.FloorToInt(remainingTime % 60);
-        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    void UpdateTimerText(float timeLeft)
+    {
+        int minutes = Mathf.FloorToInt(timeLeft / 60);
+        int seconds = Mathf.FloorToInt(timeLeft % 60);
+        timerText.text = $"{minutes:00}:{seconds:00}";
+    }
+
+    void TimerEnded()
+    {
+        Debug.Log("Countdown has ended.");
     }
 }
