@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6296514878323174041}
   - component: {fileID: 4265866437592327568}
   - component: {fileID: 4431420449417939647}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,9 +118,9 @@ GameObject:
   - component: {fileID: 481063878677392984}
   - component: {fileID: 7213719975006683311}
   - component: {fileID: 397070736706480125}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Advertisement2_Anomaly
-  m_TagString: Untagged
+  m_TagString: Anomaly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
