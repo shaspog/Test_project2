@@ -22,7 +22,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Office chair cushion blue
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_Parent: {fileID: 2100000, guid: 01ba4f1b206db9e4f9c2d91deeb19d70, type: 2}
+  m_Parent: {fileID: 2100000, guid: e66712cc34409e049a3064cd6f7e1e5f, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _METALLICSPECGLOSSMAP

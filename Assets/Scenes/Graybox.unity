@@ -10565,7 +10565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7490435779983554575, guid: b3b7538532a54294eaf8839637a946e1, type: 3}
       propertyPath: m_Volume
-      value: 0.7
+      value: 0.214
       objectReference: {fileID: 0}
     - target: {fileID: 7490435779983554575, guid: b3b7538532a54294eaf8839637a946e1, type: 3}
       propertyPath: m_audioClip
@@ -35175,7 +35175,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7f512cb4503c1864ca0c2d01d59a35fb, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 77ef385bd3589a14cb54e6dca2fe0476, type: 2}
+      objectReference: {fileID: 2100000, guid: 3cef4c4fa038986408de7b2a4dcf0d95, type: 2}
     - target: {fileID: 919132149155446097, guid: 7f512cb4503c1864ca0c2d01d59a35fb, type: 3}
       propertyPath: m_Name
       value: futuristic computer REALLL (9)
@@ -55829,6 +55829,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4383616611398923872}
   m_Mesh: {fileID: -100910074150003064, guid: b563e967d01c8014989dd3b7249fdc64, type: 3}
+--- !u!1001 &3491348461960813344
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4922610530927318067, guid: 9082858fadc29524cabab9777019d73b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9745162
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922610530927318067, guid: 9082858fadc29524cabab9777019d73b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0033000708
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922610530927318067, guid: 9082858fadc29524cabab9777019d73b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.2159998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922610530927318067, guid: 9082858fadc29524cabab9777019d73b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922610530927318067, guid: 9082858fadc29524cabab9777019d73b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922610530927318067, guid: 9082858fadc29524cabab9777019d73b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922610530927318067, guid: 9082858fadc29524cabab9777019d73b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922610530927318067, guid: 9082858fadc29524cabab9777019d73b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922610530927318067, guid: 9082858fadc29524cabab9777019d73b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922610530927318067, guid: 9082858fadc29524cabab9777019d73b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700273580583243401, guid: 9082858fadc29524cabab9777019d73b, type: 3}
+      propertyPath: m_Name
+      value: office chair distorted 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9082858fadc29524cabab9777019d73b, type: 3}
 --- !u!64 &3579075547250221543
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -62301,6 +62358,63 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &5253271836502352745
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8342834537366973836, guid: d2c3dcf1afb8b7a4fb74018e85931deb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.181814
+      objectReference: {fileID: 0}
+    - target: {fileID: 8342834537366973836, guid: d2c3dcf1afb8b7a4fb74018e85931deb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.148
+      objectReference: {fileID: 0}
+    - target: {fileID: 8342834537366973836, guid: d2c3dcf1afb8b7a4fb74018e85931deb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.905
+      objectReference: {fileID: 0}
+    - target: {fileID: 8342834537366973836, guid: d2c3dcf1afb8b7a4fb74018e85931deb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 8342834537366973836, guid: d2c3dcf1afb8b7a4fb74018e85931deb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8342834537366973836, guid: d2c3dcf1afb8b7a4fb74018e85931deb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8342834537366973836, guid: d2c3dcf1afb8b7a4fb74018e85931deb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8342834537366973836, guid: d2c3dcf1afb8b7a4fb74018e85931deb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8342834537366973836, guid: d2c3dcf1afb8b7a4fb74018e85931deb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8342834537366973836, guid: d2c3dcf1afb8b7a4fb74018e85931deb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8686427060847916854, guid: d2c3dcf1afb8b7a4fb74018e85931deb, type: 3}
+      propertyPath: m_Name
+      value: office chair distorted 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d2c3dcf1afb8b7a4fb74018e85931deb, type: 3}
 --- !u!4 &5269508544547675479
 Transform:
   m_ObjectHideFlags: 0
@@ -69755,3 +69869,5 @@ SceneRoots:
   - {fileID: 1347804482}
   - {fileID: 2048175017}
   - {fileID: 349926297}
+  - {fileID: 5253271836502352745}
+  - {fileID: 3491348461960813344}
