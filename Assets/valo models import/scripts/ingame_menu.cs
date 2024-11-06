@@ -4,17 +4,16 @@ using UnityEngine.InputSystem;
 
 public class ingame_menu : MonoBehaviour
 {
-    public Transform player; // Player's Transform
     public GameObject menuObject; // Menu object to display
     public InputActionReference menuButtonAction; // Input action for menu toggle
     public bool isMenuActive = false;
 
-    public void OnEnable()
+    private void OnEnable()
     {
         menuButtonAction.action.performed += ToggleMenu;
     }
 
-    public void OnDisable()
+    private void OnDisable()
     {
         menuButtonAction.action.performed -= ToggleMenu;
     }
@@ -32,19 +31,11 @@ public class ingame_menu : MonoBehaviour
 
         if (isMenuActive)
         {
-            Vector3 menuPosition = player.position + player.forward * 2;
-            menuPosition.y = 1; // Fix y position to 1
-            menuObject.transform.position = menuPosition;
-
-            // Restrict rotation to only face the player on Y-axis
-            Vector3 lookDirection = player.position - menuObject.transform.position;
-            lookDirection.y = 0; // Lock rotation on x-axis
-            menuObject.transform.rotation = Quaternion.LookRotation(lookDirection);
-            Time.timeScale = 0f; // Pause game
+            Time.timeScale = 0f; // Pause the game when the menu is active
         }
         else
         {
-            Time.timeScale = 1f; // Resume game
+            Time.timeScale = 1f; // Resume the game when the menu is inactive
         }
     }
 }

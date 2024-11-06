@@ -2229,11 +2229,6 @@ Transform:
   - {fileID: 331392947}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2053918815 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 603198485939078566, guid: 36021bfd3afdce646a1e5c4764adc59f, type: 3}
-  m_PrefabInstance: {fileID: 1770543209603963848}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2092139007
 GameObject:
   m_ObjectHideFlags: 0
@@ -3253,7 +3248,9 @@ PrefabInstance:
       value: -0.34
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 603198485939078566, guid: 36021bfd3afdce646a1e5c4764adc59f, type: 3}
+    - {fileID: 9017948364721795567, guid: 36021bfd3afdce646a1e5c4764adc59f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36021bfd3afdce646a1e5c4764adc59f, type: 3}
@@ -10887,7 +10884,7 @@ PrefabInstance:
     - target: {fileID: 1814002417965688767, guid: 7ed6e45f15744bf4cbe9c9f69f163a42, type: 3}
       propertyPath: arrowObject
       value: 
-      objectReference: {fileID: 2053918815}
+      objectReference: {fileID: 0}
     - target: {fileID: 1814002417965688767, guid: 7ed6e45f15744bf4cbe9c9f69f163a42, type: 3}
       propertyPath: arrowOnButton
       value: 
