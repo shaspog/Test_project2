@@ -23,7 +23,7 @@ public class EyesOpenOnSceneEnter : MonoBehaviour
     IEnumerator AutoOpen()
     {
         // Wait for the specified delay
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.5f);
         EyesClosing.OpenEyes();
     }
 }
