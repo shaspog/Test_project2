@@ -50,6 +50,7 @@ public class ObjectScanner : MonoBehaviour
     public Slider anomalyTimerSlider;
     public float maxTime = 300f;
     private float currentTime;
+    public float timerRateDec = 0.1f;
 
     //Cooldown for scanner
     public float scanCooldown = 3f;
@@ -154,7 +155,7 @@ public class ObjectScanner : MonoBehaviour
 
         if (activeAnomalies > 0)
         {
-            currentTime -= Time.deltaTime * activeAnomalies;
+            currentTime -= Time.deltaTime * activeAnomalies * timerRateDec;
             anomalyTimerSlider.value = currentTime;
 
             if (currentTime <= 0)
@@ -264,7 +265,7 @@ public class ObjectScanner : MonoBehaviour
         while (true) //indefinete loop
         {
             RandomizeAnomalies(anomalyPairs);
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(20f);
 
             if (currentDifficultyIndex < difficultyLevels.Count)
             {

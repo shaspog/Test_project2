@@ -1,10 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-public class clock : MonoBehaviour
+public class Clock : MonoBehaviour
 {
     private const float REAL_SECONDS_PER_INGAME_DAY = 60f;
 
@@ -12,29 +8,21 @@ public class clock : MonoBehaviour
     private Transform clockMinuteHandTransform;
     private float day;
 
-    private Rigidbody clockRigidbody;  // Reference to the clock's Rigidbody
-    private XRGrabInteractable grabInteractable;  // Reference to the XR Grab Interactable component
-
     private void Awake()
     {
         // Find the hour and minute hands within the clock's hierarchy
         clockHourHandTransform = transform.Find("hourHand");
         clockMinuteHandTransform = transform.Find("minuteHand");
 
-        // Get the Rigidbody component attached to the clock
-        clockRigidbody = GetComponent<Rigidbody>();
-
-        // Get the XRGrabInteractable component
-        grabInteractable = GetComponent<XRGrabInteractable>();
-
-        // Subscribe to the grab and release events
-        grabInteractable.selectEntered.AddListener(OnGrab);
-        grabInteractable.selectExited.AddListener(OnRelease);
+        if (clockHourHandTransform == null || clockMinuteHandTransform == null)
+        {
+            Debug.LogError("Hour or minute hand not found in the clock hierarchy.");
+        }
     }
 
     private void Update()
     {
-        // Update the in-game time, regardless of whether the clock is held or not
+        // Update the in-game time
         day += Time.deltaTime / REAL_SECONDS_PER_INGAME_DAY;
 
         // Normalize the day value to a 0-1 range
@@ -44,35 +32,14 @@ public class clock : MonoBehaviour
         float rotationDegreesPerDay = 360f;
         float hoursPerDay = 24f;
 
-        // Apply the rotation to the hour and minute hands relative to the clock's local space
-        clockHourHandTransform.localEulerAngles = new Vector3(0, 0, -dayNormalized * rotationDegreesPerDay);
-        clockMinuteHandTransform.localEulerAngles = new Vector3(0, 0, -dayNormalized * rotationDegreesPerDay * hoursPerDay);
-    }
-
-    // Called when the clock is grabbed
-    private void OnGrab(SelectEnterEventArgs args)
-    {
-        // Enable gravity when the clock is grabbed
-        if (clockRigidbody != null)
+        if (clockHourHandTransform != null)
         {
-            clockRigidbody.useGravity = true;
+            clockHourHandTransform.localEulerAngles = new Vector3(0, 0, -dayNormalized * rotationDegreesPerDay);
         }
-    }
 
-    // Called when the clock is released
-    private void OnRelease(SelectExitEventArgs args)
-    {
-        // Ensure gravity remains enabled after release
-        if (clockRigidbody != null)
+        if (clockMinuteHandTransform != null)
         {
-            clockRigidbody.useGravity = true;  // Force gravity to remain enabled
+            clockMinuteHandTransform.localEulerAngles = new Vector3(0, 0, -dayNormalized * rotationDegreesPerDay * hoursPerDay);
         }
-    }
-
-    private void OnDestroy()
-    {
-        // Unsubscribe from events to avoid memory leaks
-        grabInteractable.selectEntered.RemoveListener(OnGrab);
-        grabInteractable.selectExited.RemoveListener(OnRelease);
     }
 }

@@ -2,20 +2,23 @@ using UnityEngine;
 
 public class ChairMovement : MonoBehaviour
 {
-    public Vector3 targetPosition;  // target position the chair will move to
-    public float speed = 2.0f;      // speed of the movement
-    private Vector3 startPosition;  // initial position of the chair
-    private bool shouldMove = false; // flag to trigger the movement
+    public Vector3 targetPosition;
+    public Vector3 targetRotation;
+    public float speed = 2.0f;      
+    private Vector3 startPosition;
+    private Quaternion startRotation;
+    private bool shouldMove = false; 
 
     //Sultan
     public string requireTag = "Anomaly"; //tag 
-    private bool isResetting = false; //reset transform 
+    private bool isResetting = false; 
 
     void Start()
     {
-        startPosition = transform.position; // store the initial position of the chair
+        startPosition = transform.position; 
+        startRotation = transform.rotation;
 
-        // automatically start moving after 5 seconds - Updated Sultan InvokeRepeating calls every 30 second after the first 5 to move the object
+        // repeat every 5 seconds
         InvokeRepeating("ChanceStartMoving", 5f, 30f);
     }
  
@@ -26,12 +29,12 @@ public class ChairMovement : MonoBehaviour
         {
             //Sultan
             Vector3 destination = isResetting ? startPosition : targetPosition;
+            Quaternion destinationRotation = isResetting ? startRotation : Quaternion.Euler(targetRotation);
 
-            // move the chair towards the target position smoothly
             transform.position = Vector3.MoveTowards(transform.position, destination, speed * Time.deltaTime);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, destinationRotation, speed * Time.deltaTime * 20f);
 
-            // if the chair is very close to the target position, stop moving
-            if (Vector3.Distance(transform.position, destination) < 0.01f)
+            if (Vector3.Distance(transform.position, destination) < 0.01f && Quaternion.Angle(transform.rotation, destinationRotation) < 0.1f)
             {
                 //Sultan
               if (!isResetting)
@@ -80,6 +83,7 @@ public class ChairMovement : MonoBehaviour
     public void ResetPosition()
     {
         transform.position = startPosition;
+        transform.rotation = startRotation;
         //sultan
         shouldMove = false;
         isResetting = false;
