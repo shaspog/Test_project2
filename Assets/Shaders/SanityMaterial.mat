@@ -54,11 +54,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _GrainIntensity: 0
+    - _GrainIntensity: 0.5
     - _MaskRadius: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Sanity: 0.85501206
-    - _VignetteIntensity: 0.2
+    - _VignetteIntensity: 1
     m_Colors: []
   m_BuildTextureStacks: []
